@@ -30,5 +30,11 @@ namespace M_Services
         }
 
         public static async Task<IApplicationBuilder> SeedData(this WebApplication app)
+        {
+            using(var scope = app.Services.CreateScope())
+            {
+
+            }
+        }
     }
 }

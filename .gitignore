@@ -12,5 +12,8 @@
 *.class
 *.jar
 *.war
+*.vsidx
+*.v2
+*.vs/
 
 Migrations/
