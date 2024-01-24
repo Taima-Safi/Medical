@@ -1,0 +1,12 @@
+C:\Users\USER\source\repos\Medical\M-Core\bin\Debug\net7.0\M-Core.deps.json
+C:\Users\USER\source\repos\Medical\M-Core\bin\Debug\net7.0\M-Core.dll
+C:\Users\USER\source\repos\Medical\M-Core\bin\Debug\net7.0\M-Core.pdb
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.AssemblyInfo.cs
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.dll
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\refint\M-Core.dll
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.pdb
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\ref\M-Core.dll

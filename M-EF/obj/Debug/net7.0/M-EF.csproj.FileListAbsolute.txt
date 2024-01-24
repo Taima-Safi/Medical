@@ -1,0 +1,12 @@
+C:\Users\USER\source\repos\Medical\M-EF\bin\Debug\net7.0\M-EF.deps.json
+C:\Users\USER\source\repos\Medical\M-EF\bin\Debug\net7.0\M-EF.dll
+C:\Users\USER\source\repos\Medical\M-EF\bin\Debug\net7.0\M-EF.pdb
+C:\Users\USER\source\repos\Medical\M-EF\obj\Debug\net7.0\M-EF.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Medical\M-EF\obj\Debug\net7.0\M-EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Medical\M-EF\obj\Debug\net7.0\M-EF.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Medical\M-EF\obj\Debug\net7.0\M-EF.AssemblyInfo.cs
+C:\Users\USER\source\repos\Medical\M-EF\obj\Debug\net7.0\M-EF.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Medical\M-EF\obj\Debug\net7.0\M-EF.dll
+C:\Users\USER\source\repos\Medical\M-EF\obj\Debug\net7.0\refint\M-EF.dll
+C:\Users\USER\source\repos\Medical\M-EF\obj\Debug\net7.0\M-EF.pdb
+C:\Users\USER\source\repos\Medical\M-EF\obj\Debug\net7.0\ref\M-EF.dll
