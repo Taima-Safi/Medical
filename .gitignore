@@ -15,5 +15,8 @@
 *.vsidx
 *.v2
 *.vs/
+*.dll
+*.pdb
 
 Migrations/
+/Medical-Api/Medical.csproj

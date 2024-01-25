@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace M_Services.IServices
 {
-    public interface IAuthService
+    public class IAuthService
     {
     }
 }

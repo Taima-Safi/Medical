@@ -167,6 +167,9 @@
               "C:\\Users\\USER\\source\\repos\\Medical\\M-Core\\M-Core.csproj": {
                 "projectPath": "C:\\Users\\USER\\source\\repos\\Medical\\M-Core\\M-Core.csproj"
               },
+              "C:\\Users\\USER\\source\\repos\\Medical\\M-EF\\M-EF.csproj": {
+                "projectPath": "C:\\Users\\USER\\source\\repos\\Medical\\M-EF\\M-EF.csproj"
+              },
               "C:\\Users\\USER\\source\\repos\\Medical\\Repos\\Repos.csproj": {
                 "projectPath": "C:\\Users\\USER\\source\\repos\\Medical\\Repos\\Repos.csproj"
               }
@@ -183,9 +186,23 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.15, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -198,6 +215,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[5.40.0, )"
             }
           },
           "imports": [

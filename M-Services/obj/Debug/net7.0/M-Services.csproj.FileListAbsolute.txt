@@ -17,3 +17,5 @@ C:\Users\USER\source\repos\Medical\M-Services\obj\Debug\net7.0\M-Services.dll
 C:\Users\USER\source\repos\Medical\M-Services\obj\Debug\net7.0\refint\M-Services.dll
 C:\Users\USER\source\repos\Medical\M-Services\obj\Debug\net7.0\M-Services.pdb
 C:\Users\USER\source\repos\Medical\M-Services\obj\Debug\net7.0\ref\M-Services.dll
+C:\Users\USER\source\repos\Medical\M-Services\bin\Debug\net7.0\M-Services.runtimeconfig.json
+C:\Users\USER\source\repos\Medical\M-Services\obj\Debug\net7.0\M-Services.genruntimeconfig.cache

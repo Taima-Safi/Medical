@@ -122,3 +122,16 @@ C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\refint\Medical.d
 C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.pdb
 C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.genruntimeconfig.cache
 C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\ref\Medical.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Graph.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Graph.Core.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Kiota.Abstractions.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Kiota.Authentication.Azure.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Kiota.Http.HttpClientLibrary.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Kiota.Serialization.Form.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Kiota.Serialization.Json.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Kiota.Serialization.Multipart.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Kiota.Serialization.Text.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Std.UriTemplate.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Medical.staticwebassets.runtime.json

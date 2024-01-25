@@ -13,7 +13,7 @@ namespace M_EF.Entities
         public string LastName { get; set; }
         public bool IsDeleted { get; set; } = false;
         public DateTime CreatedOn { get; set; }
-        public string Image { get; set; }
+        //public string Image { get; set; }
         public GenderType Gender { get; set; }
         public string? VerificationToken { get; set; }
         public DateTime? VerifiedAt { get; set; }
