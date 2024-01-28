@@ -114,5 +114,5 @@ coverage*.info
 !?*.[Cc]ache/
 
 Migrations/
-bin/
+bin/Debug/net7.0
 /Medical-Api/Medical.csproj
