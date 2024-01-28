@@ -106,7 +106,6 @@ C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.Generate
 C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.AssemblyInfoInputs.cache
 C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.AssemblyInfo.cs
 C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.csproj.CoreCompileInputs.cache
-C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\staticwebassets\msbuild.Medical.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\staticwebassets\msbuild.build.Medical.props
@@ -135,3 +134,8 @@ C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Kiota.
 C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Kiota.Serialization.Text.dll
 C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Std.UriTemplate.dll
 C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Medical.staticwebassets.runtime.json
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\ar\M-Core.resources.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\en-US\M-Core.resources.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\SixLabors.ImageSharp.dll

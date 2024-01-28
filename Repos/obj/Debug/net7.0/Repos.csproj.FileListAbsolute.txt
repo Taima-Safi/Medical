@@ -13,3 +13,7 @@ C:\Users\USER\source\repos\Medical\Repos\obj\Debug\net7.0\Repos.dll
 C:\Users\USER\source\repos\Medical\Repos\obj\Debug\net7.0\refint\Repos.dll
 C:\Users\USER\source\repos\Medical\Repos\obj\Debug\net7.0\Repos.pdb
 C:\Users\USER\source\repos\Medical\Repos\obj\Debug\net7.0\ref\Repos.dll
+C:\Users\USER\source\repos\Medical\Repos\bin\Debug\net7.0\M-Core.dll
+C:\Users\USER\source\repos\Medical\Repos\bin\Debug\net7.0\M-Core.pdb
+C:\Users\USER\source\repos\Medical\Repos\bin\Debug\net7.0\ar\M-Core.resources.dll
+C:\Users\USER\source\repos\Medical\Repos\bin\Debug\net7.0\en-US\M-Core.resources.dll

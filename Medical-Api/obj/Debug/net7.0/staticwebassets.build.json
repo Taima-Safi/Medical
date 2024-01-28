@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qw3gc3vCFtieWzgVoeduZ31bJ3ClDOWI4BuWzHofoIE=",
+  "Hash": "MrcrsIxJWECMvWhBbsc7TKXiAisnXc1xIfV1tV8N6H4=",
   "Source": "Medical",
   "BasePath": "_content/Medical",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\USER\\source\\repos\\Medical\\Medical-Api\\wwwroot\\Images\\UserImages\\Male Image.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\Medical\\Medical-Api\\wwwroot\\Images\\DefaultUserImages\\Female image.webp",
       "SourceId": "Medical",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\USER\\source\\repos\\Medical\\Medical-Api\\wwwroot\\",
       "BasePath": "_content/Medical",
-      "RelativePath": "Images/UserImages/Male Image.jpg",
+      "RelativePath": "Images/DefaultUserImages/Female image.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\UserImages\\Male Image.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\DefaultUserImages\\Female image.webp"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\Medical\\Medical-Api\\wwwroot\\Images\\DefaultUserImages\\Male Image.jpg",
+      "SourceId": "Medical",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Medical\\Medical-Api\\wwwroot\\",
+      "BasePath": "_content/Medical",
+      "RelativePath": "Images/DefaultUserImages/Male Image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\DefaultUserImages\\Male Image.jpg"
     }
   ]
 }

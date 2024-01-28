@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using M_Services.IServices;
+using M_Core.Dtos.UserDto;
 
 namespace Medical.Controllers
 {
@@ -14,6 +15,51 @@ namespace Medical.Controllers
         public AuthController(IAuthService authService)
         {
             _authService = authService;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetUsers()
+        {
+            return Ok(await _authService.GetUsers());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register([FromForm] RegisterUserDto dto)
+        {
+            return Ok(await _authService.Register(dto));
+        }
+        
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login([FromForm] LoginDto dto)
+        {
+            return Ok(await _authService.Login(dto));
+        }
+
+        [HttpGet("ForgetPassword")]
+        public async Task<IActionResult> ForgetPassword(string userName)
+        {
+            return Ok(await _authService.ForgetPassword(userName));
+        }
+
+
+        [HttpPost("ResetPasswordToken")]
+        public async Task<IActionResult> ResetPasswordToken(string restToken)
+        {
+            return Ok(await _authService.ResetPasswordToken(restToken));
+        }
+
+
+        [HttpPost("ResetPassword")]
+        public async Task<IActionResult> ResetPassword(ResetPasswordDto dto)
+        {
+            return Ok(await _authService.ResetPassword(dto));
+        }
+
+        [HttpGet("Verify")]
+        public async Task<IActionResult> Verify(string token)
+        {
+            return Ok(await _authService.Verify(token));
         }
     }
 }

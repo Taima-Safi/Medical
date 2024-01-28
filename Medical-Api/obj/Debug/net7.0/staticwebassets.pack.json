@@ -1,8 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\Medical\\Medical-Api\\wwwroot\\Images\\UserImages\\Male Image.jpg",
-      "PackagePath": "staticwebassets\\Images\\UserImages\\Male Image.jpg"
+      "Id": "C:\\Users\\USER\\source\\repos\\Medical\\Medical-Api\\wwwroot\\Images\\DefaultUserImages\\Female image.webp",
+      "PackagePath": "staticwebassets\\Images\\DefaultUserImages\\Female image.webp"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\Medical\\Medical-Api\\wwwroot\\Images\\DefaultUserImages\\Male Image.jpg",
+      "PackagePath": "staticwebassets\\Images\\DefaultUserImages\\Male Image.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Medical.Microsoft.AspNetCore.StaticWebAssets.props",

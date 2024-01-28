@@ -341,6 +341,14 @@
           }
         }
       },
+      "Microsoft.Extensions.Localization.Abstractions/8.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.123.58008"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
@@ -607,6 +615,14 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
+      "SixLabors.ImageSharp/3.1.2": {
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.2.0"
+          }
+        }
+      },
       "Std.UriTemplate/0.0.50": {
         "runtime": {
           "lib/net5.0/Std.UriTemplate.dll": {
@@ -870,8 +886,22 @@
         }
       },
       "M-Core/1.0.0": {
+        "dependencies": {
+          "M-EF": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.Extensions.Localization.Abstractions": "8.0.1",
+          "SixLabors.ImageSharp": "3.1.2"
+        },
         "runtime": {
           "M-Core.dll": {}
+        },
+        "resources": {
+          "ar/M-Core.resources.dll": {
+            "locale": "ar"
+          },
+          "en-US/M-Core.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "M-EF/1.0.0": {
@@ -886,7 +916,9 @@
       },
       "Repos/1.0.0": {
         "dependencies": {
-          "M-EF": "1.0.0"
+          "M-Core": "1.0.0",
+          "M-EF": "1.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "8.0.1"
         },
         "runtime": {
           "Repos.dll": {}
@@ -1103,6 +1135,13 @@
       "path": "microsoft.extensions.identity.stores/7.0.15",
       "hashPath": "microsoft.extensions.identity.stores.7.0.15.nupkg.sha512"
     },
+    "Microsoft.Extensions.Localization.Abstractions/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6I7L2lNIziR93fjxecmeXi/dTnsGc7zHp+zXIywA01wzy769o11Ba6IDmese3MLXYBohiWf5X/dhT04AeouSHA==",
+      "path": "microsoft.extensions.localization.abstractions/8.0.1",
+      "hashPath": "microsoft.extensions.localization.abstractions.8.0.1.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1291,6 +1330,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PYdR6GUI+gW6LBaAQKTik0Ai8oLpFAz3a/KrVusxoTg3kf7F3cuIqKMhJGsuQcmDHCF+iD81Pyn4cexyHrb1ZA==",
+      "path": "sixlabors.imagesharp/3.1.2",
+      "hashPath": "sixlabors.imagesharp.3.1.2.nupkg.sha512"
     },
     "Std.UriTemplate/0.0.50": {
       "type": "package",

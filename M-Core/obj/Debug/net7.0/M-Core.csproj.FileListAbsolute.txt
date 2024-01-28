@@ -10,3 +10,13 @@ C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.dll
 C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\refint\M-Core.dll
 C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.pdb
 C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\ref\M-Core.dll
+C:\Users\USER\source\repos\Medical\M-Core\bin\Debug\net7.0\M-EF.dll
+C:\Users\USER\source\repos\Medical\M-Core\bin\Debug\net7.0\M-EF.pdb
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.csproj.CopyComplete
+C:\Users\USER\source\repos\Medical\M-Core\bin\Debug\net7.0\ar\M-Core.resources.dll
+C:\Users\USER\source\repos\Medical\M-Core\bin\Debug\net7.0\en-US\M-Core.resources.dll
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M_Core.Resources.SharedResources.ar.resources
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M_Core.Resources.SharedResources.en-US.resources
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\M-Core.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\ar\M-Core.resources.dll
+C:\Users\USER\source\repos\Medical\M-Core\obj\Debug\net7.0\en-US\M-Core.resources.dll

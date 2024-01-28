@@ -1,17 +1,21 @@
-﻿using M_Core.UserStatics;
+﻿using M_Core.Statics;
+using M_Core.UserStatics;
 using M_EF.Data;
 using M_EF.Entities;
 using M_Services.IServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Localization;
 //using Microsoft.Graph.Models;
 using Microsoft.IdentityModel.Tokens;
 using Repos;
 using Repos.IRepos;
+using System.Globalization;
 using System.Text;
 
 namespace M_Services
@@ -82,6 +86,35 @@ namespace M_Services
             .AddEntityFrameworkStores<AppDbContext>()
             .AddSignInManager<SignInManager<ApplicationUser>>();
         }
+
+        public static async Task<IServiceCollection> LocalizationServices(this IServiceCollection services)
+        {
+            services.AddLocalization();
+            services.Configure<RequestLocalizationOptions>(
+                options =>
+                {
+                    var supportedCultures = new List<CultureInfo>
+                    {
+                        new CultureInfo("en-US"),
+                        new CultureInfo("ar"),
+                    };
+
+                    options.DefaultRequestCulture = new RequestCulture(culture: supportedCultures[0]);
+                    options.SupportedCultures = supportedCultures;
+                    options.SupportedUICultures = supportedCultures;
+                });
+            return services;
+                
+        }
+
+        //public static async Task<IApplicationBuilder> LocalizerAsync(this WebApplication app, LocalizerStatics? culturs)
+        //{
+        //    return  app.UseRequestLocalization(new RequestLocalizationOptions()
+        //                .SetDefaultCulture(culturs.SupportedCultures[0])
+        //                .AddSupportedCultures(culturs.SupportedCultures)
+        //                .AddSupportedUICultures(culturs.SupportedCultures));
+
+        //}
 
         public static async Task<IApplicationBuilder> SeedDataAsync(this WebApplication app)
         {

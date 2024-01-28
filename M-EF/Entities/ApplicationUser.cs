@@ -13,14 +13,17 @@ namespace M_EF.Entities
         public string LastName { get; set; }
         public bool IsDeleted { get; set; } = false;
         public DateTime CreatedOn { get; set; }
-        //public string Image { get; set; }
+        public string Image { get; set; }
         public GenderType Gender { get; set; }
+
         public string? VerificationToken { get; set; }
         public DateTime? VerifiedAt { get; set; }
-        public string? PasswordResetToken { get; set; }
 
-        //public DateTime? ResetTokenExpires { get; set; }
-       // public List<RefreshTokenModel>? RefreshTokens { set; get; }
+        public string? PasswordResetToken { get; set; }
+        public bool? IsResetPasswordToken { get; set; }/* = false;*/
+        public DateTime? ResetTokenExpires { get; set; }
+
+        public List<RefreshTokenModel>? RefreshTokens { set; get; }
     }
 
     public enum GenderType

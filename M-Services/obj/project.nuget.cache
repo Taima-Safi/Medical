@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qM1/sfYuWQ12J7RwAaxKsRSgNQsLaqlUxs1YepylN20UR+ELeRhaPE8j8ejPryEYUvZBHDzk5pJBznrtCqfG1g==",
+  "dgSpecHash": "tWXSJvcZ1X+XtKLwj+E2QdFbdEatYdWA4PPsKpY23+DYze12Hojos075Zl3OlJWww+sxBrWHLse1HOr48t9v9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\source\\repos\\Medical\\M-Services\\M-Services.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\7.0.15\\microsoft.extensions.fileproviders.embedded.7.0.15.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.identity.core\\7.0.15\\microsoft.extensions.identity.core.7.0.15.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.identity.stores\\7.0.15\\microsoft.extensions.identity.stores.7.0.15.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\8.0.1\\microsoft.extensions.localization.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
@@ -60,6 +61,7 @@
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\sixlabors.imagesharp\\3.1.2\\sixlabors.imagesharp.3.1.2.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\std.uritemplate\\0.0.50\\std.uritemplate.0.0.50.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
