@@ -113,6 +113,18 @@ coverage*.info
 # but keep track of directories ending in .cache
 !?*.[Cc]ache/
 
+
+.vs/Medical/v17
+/Medical/.vs
+/obj
+/Medical/.vs/TestGit
+/Medical/obj/Debug/net7.0
+/Medical/Properties
+/Medical/obj
+*.json
+*.cs
+
+
 Migrations/
 bin/Debug/net7.0
 /Medical-Api/Medical.csproj
