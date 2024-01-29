@@ -30,7 +30,11 @@ namespace M_Services
             });
 
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<ISpecialitiesService, SpecialitiesService>();
+
+
             services.AddScoped<IAuthRepo, AuthRepo>();
+            services.AddScoped<ISpecialitiesRepo, SpecialitiesRepo>();
 
             return services;
         }

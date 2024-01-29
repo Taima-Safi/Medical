@@ -14,12 +14,17 @@ namespace M_EF.Data
         public AppDbContext(DbContextOptions options) : base(options)
         {
         }
-
-      
+        public DbSet<SpecialtyModel> Specialities { get;set; }
+        public DbSet<ServiceModel> Services { get;set; }
+        public DbSet<DoctorModel> Doctors { get;set; }
+        
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
 
+            builder.Entity<ApplicationUser>().HasQueryFilter(x => !x.IsDeleted);
+            builder.Entity<ServiceModel>().HasQueryFilter(x => !x.IsDeleted);
+            builder.Entity<DoctorModel>().HasQueryFilter(x => !x.IsDeleted);
         }
     }
 }

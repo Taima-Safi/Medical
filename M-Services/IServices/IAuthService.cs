@@ -10,10 +10,12 @@ namespace M_Services.IServices
 {
     public interface IAuthService
     {
+        Task<string> Delete(LoginDto dto);
         Task<string> ForgetPassword(string userName);
         Task<ReadUsersDto> GetUsers();
         Task<AuthDto> Login(LoginDto dto);
-        Task<ReadUserDto> Register(RegisterUserDto dto);
+        Task<AuthDto> RefreshToken(string refreshtoken);
+        Task<AuthDto> Register(RegisterUserDto dto);
         Task<string> ResetPassword(ResetPasswordDto dto);
         Task<string> ResetPasswordToken(string resetToken);
         Task<string> Verify(string token);

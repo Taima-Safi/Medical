@@ -23,7 +23,7 @@ namespace Medical.Controllers
             return Ok(await _authService.GetUsers());
         }
 
-        [HttpPost]
+        [HttpPost("Register")]
         public async Task<IActionResult> Register([FromForm] RegisterUserDto dto)
         {
             return Ok(await _authService.Register(dto));
@@ -36,7 +36,13 @@ namespace Medical.Controllers
             return Ok(await _authService.Login(dto));
         }
 
-        [HttpGet("ForgetPassword")]
+        [HttpPost("RefreshToken")]
+        public async Task<IActionResult> RefreshToken(string refreshtoken)
+        {
+            return Ok(await _authService.RefreshToken(refreshtoken));
+        }
+        
+        [HttpPost("ForgetPassword")]
         public async Task<IActionResult> ForgetPassword(string userName)
         {
             return Ok(await _authService.ForgetPassword(userName));
@@ -60,6 +66,12 @@ namespace Medical.Controllers
         public async Task<IActionResult> Verify(string token)
         {
             return Ok(await _authService.Verify(token));
+        }
+
+        [HttpDelete("Delete")]
+        public async Task<IActionResult> Delete(LoginDto dto)
+        {
+            return Ok(await _authService.Delete(dto));
         }
     }
 }

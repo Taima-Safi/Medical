@@ -62,13 +62,13 @@ namespace M_Services
             return dto;
         }
 
-        public async Task<ReadUserDto> Register(RegisterUserDto dto)
+        public async Task<AuthDto> Register(RegisterUserDto dto)
         {
-            var readUser = new ReadUserDto();
+            var authDto = new AuthDto();
             if (dto is null)
             {
-                readUser.Message = $"{_localizer[LocalizerStatics.Invalid]} {_localizer[LocalizerStatics.User]}";
-                return readUser;
+                authDto.Message = $"{_localizer[LocalizerStatics.Invalid]} {_localizer[LocalizerStatics.User]}";
+                return authDto;
             }
             var user = new ApplicationUser();
 
@@ -109,33 +109,33 @@ namespace M_Services
                 }
                 else
                 {
-                    readUser.Message = uploadFile.Message;
-                    return readUser;
+                    authDto.Message = uploadFile.Message;
+                    return authDto;
                 }
             }
 
             var result = await _authRepo.Register(user, dto.Password);
             if (result != _localizer[LocalizerStatics.RegisteredSucceded])
             {
-                readUser.Message = result;
-                return readUser;
+                authDto.Message = result;
+                return authDto;
             }
             var refreshToken = GenerateRefreshToken();
 
             user.RefreshTokens?.Add(refreshToken);
             await _authRepo.UpdateUser(user);
 
-            readUser.Message = result;
-            readUser.Id = user.Id;
-            readUser.FirstName = user.FirstName;
-            readUser.LastName = user.LastName;
-            readUser.Email = user.Email;
-            readUser.UserName = user.UserName;
-            readUser.Gender = (int)user.Gender;
-            readUser.Token = await _authRepo.GenerateTokenString(user, _jwtConfig);
-            readUser.RefreshToken = refreshToken.Token;
-            readUser.RefreshTokenExpiration = refreshToken.ExpiresOn;
-            return readUser;
+            authDto.Message = result;
+            authDto.IsAuthenticated = true;
+            authDto.Id = user.Id;
+            authDto.FirstName = user.FirstName;
+            authDto.LastName = user.LastName;
+            authDto.Email = user.Email;
+            authDto.Gender = user.Gender;
+            authDto.Token = await _authRepo.GenerateTokenString(user, _jwtConfig);
+            authDto.RefreshToken = refreshToken.Token;
+            authDto.RefreshTokenExpiration = refreshToken.ExpiresOn;
+            return authDto;
         }
 
         public async Task<AuthDto> Login(LoginDto dto)
@@ -177,6 +177,7 @@ namespace M_Services
 
             authDto.Id = user.Id;
             authDto.Email = user.Email;
+            authDto.IsAuthenticated = true;
             authDto.Token = await _authRepo.GenerateTokenString(user, _jwtConfig);
             authDto.Gender = user.Gender;
             authDto.FirstName = user.FirstName;
@@ -241,7 +242,53 @@ namespace M_Services
             await _authRepo.UpdateUser(user);
             return _localizer[LocalizerStatics.Verified];
         }
+        public async Task<string> Delete(LoginDto dto)
+        {
+            var user = await _authRepo.FindUserAsync(u => u.Email == dto.Email);
+            if(user is null)
+                return $"{_localizer[LocalizerStatics.Invalid]} {_localizer[LocalizerStatics.User]}";
+            if (!await _authRepo.CheckPassword(user, dto.Password))
+                return _localizer[LocalizerStatics.IncorrectPassword];
 
+            user.IsDeleted = true;
+            await _authRepo.UpdateUser(user);
+
+            return _localizer[LocalizerStatics.Updated];
+        }
+
+        public async Task<AuthDto> RefreshToken(string token)
+        {
+            var authDto = new AuthDto();
+            var user = await _authRepo.FindUserAsync(u => u.RefreshTokens.Any(r => r.Token == token));
+            if (user is null)
+            {
+                authDto.IsAuthenticated = false;
+                authDto.Message = $"{_localizer[LocalizerStatics.Invalid]} {_localizer[LocalizerStatics.User]}";
+                return authDto;
+            }
+            var refreshToken = user.RefreshTokens.Single(t => t.Token == token);
+            if(!refreshToken.IsActive)
+            {
+                authDto.IsAuthenticated = false;
+                authDto.Message = $"Non Active";
+                return authDto;
+            }
+            refreshToken.RevokedOn = DateTime.Now;
+            var newRefreshToken = GenerateRefreshToken();
+
+            user.RefreshTokens.Add(newRefreshToken);
+            await _authRepo.UpdateUser(user);
+
+            authDto.Id = user.Id;
+            authDto.FirstName = user.FirstName;
+            authDto.Email = user.Email;
+            authDto.Token = await _authRepo.GenerateTokenString(user, _jwtConfig);
+            authDto.RefreshToken = newRefreshToken.Token;
+            authDto.RefreshTokenExpiration = newRefreshToken.ExpiresOn;
+            authDto.IsAuthenticated = true;
+
+            return authDto;
+        }
 
         private RefreshTokenModel GenerateRefreshToken()
         {
