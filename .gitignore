@@ -114,13 +114,6 @@ coverage*.info
 !?*.[Cc]ache/
 
 
-.vs/Medical/v17
-/Medical/.vs
-/obj
-/Medical/.vs/TestGit
-/Medical/obj/Debug/net7.0
-/Medical/Properties
-/Medical/obj
 *.json
 *.cs
 
