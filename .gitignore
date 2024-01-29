@@ -36,7 +36,7 @@ bld/
 [Ll]ogs/
 
 # Visual Studio 2015/2017 cache/options directory
-.vs/
+.vs/*
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -155,3 +155,20 @@ bin/Debug/net7.0
 /M-Core/obj/Debug/net7.0/refint/M-EF.dll
 /M-Core/obj/Debug/net7.0/M-EF.dll
 /M-Core/bin/Debug/net7.0/M-EF.dll
+/M-Services/bin/Debug/net7.0/M-Core.pdb
+/M-Services/bin/Debug/net7.0/M-EF.pdb
+/M-EF/obj/Debug/net7.0/M-EF.pdb
+/M-Services/obj/Debug/net7.0/M-Services.pdb
+/M-Services/obj/Debug/net7.0/M-Services.csproj.AssemblyReference.cache
+/M-Services/bin/Debug/net7.0/Repos.pdb
+/M-Services/bin/Debug/net7.0/M-EF.pdb
+/M-Core/bin/Debug/net7.0/M-Core.dll
+/M-Core/bin/Debug/net7.0/M-Core.pdb
+/M-Core/obj/Debug/net7.0/refint/M-Core.dll
+/M-Core/obj/Debug/net7.0/ref/M-Core.dll 
+/M-Core/obj/Debug/net7.0/M-Core.dll
+/.vs/Medical/v17/.wsuo
+/.vs/VSWorkspaceState.json
+/M-Core/obj/Debug/net7.0/M-Core.csproj.AssemblyReference.cache
+/M-Core/obj/Debug/net7.0/M-Core.pdb
+/M-EF/bin/Debug/net7.0/M-EF.pdb
