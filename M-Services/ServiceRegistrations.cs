@@ -31,10 +31,14 @@ namespace M_Services
 
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ISpecialitiesService, SpecialitiesService>();
+            services.AddScoped<IServicesService, ServicesService>();
+            services.AddScoped<IDoctorsService, DoctorsService>();
 
 
             services.AddScoped<IAuthRepo, AuthRepo>();
             services.AddScoped<ISpecialitiesRepo, SpecialitiesRepo>();
+            services.AddScoped<IServicesRepo, ServicesRepo>();
+            services.AddScoped<IDoctorsRepo, DoctorsRepo>();
 
             return services;
         }
@@ -111,15 +115,6 @@ namespace M_Services
                 
         }
 
-        //public static async Task<IApplicationBuilder> LocalizerAsync(this WebApplication app, LocalizerStatics? culturs)
-        //{
-        //    return  app.UseRequestLocalization(new RequestLocalizationOptions()
-        //                .SetDefaultCulture(culturs.SupportedCultures[0])
-        //                .AddSupportedCultures(culturs.SupportedCultures)
-        //                .AddSupportedUICultures(culturs.SupportedCultures));
-
-        //}
-
         public static async Task<IApplicationBuilder> SeedDataAsync(this WebApplication app)
         {
             using (IServiceScope scope = app.Services.CreateScope())
@@ -133,8 +128,8 @@ namespace M_Services
                 await roleManager.CreateAsync(AdminRole);
                 await roleManager.CreateAsync(UserRole);
 
-                var adminUser = new ApplicationUser() { FirstName = "fadmin", LastName = "ladmin", UserName = "a@gmail.com", Email = "a@gmail.com", Gender = GenderType.Male };
-                var user = new ApplicationUser() { FirstName = "fuser", LastName = "luser", UserName = "u@gmail.com", Email = "u@gmail.com",Gender = GenderType.Male };
+                var adminUser = new ApplicationUser() { FirstName = "fadmin", LastName = "ladmin", UserName = "a@gmail.com", Email = "a@gmail.com",Image = "Male Image.jpg", Gender = GenderType.Male };
+                var user = new ApplicationUser() { FirstName = "fuser", LastName = "luser", UserName = "u@gmail.com", Email = "u@gmail.com", Image = "Male Image.jpg", Gender = GenderType.Male };
 
                 await userManager.CreateAsync(adminUser, "123");
                 await userManager.CreateAsync(user, "123");

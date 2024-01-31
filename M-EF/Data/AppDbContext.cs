@@ -18,9 +18,22 @@ namespace M_EF.Data
         public DbSet<ServiceModel> Services { get;set; }
         public DbSet<DoctorModel> Doctors { get;set; }
         
+        
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            builder.Entity<ServiceModel>()
+                .HasOne(s => s.Specialities)
+                .WithMany(s => s.Services)
+                .HasForeignKey(s => s.SpecialityId);
+
+
+            builder.Entity<DoctorModel>()
+                .HasOne(s => s.Specialities)
+                .WithMany(s => s.Doctors)
+                .HasForeignKey(s => s.SpecialityId);
+
 
             builder.Entity<ApplicationUser>().HasQueryFilter(x => !x.IsDeleted);
             builder.Entity<ServiceModel>().HasQueryFilter(x => !x.IsDeleted);

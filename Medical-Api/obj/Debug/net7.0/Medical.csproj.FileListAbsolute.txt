@@ -137,5 +137,5 @@ C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Medical.staticwe
 C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\ar\M-Core.resources.dll
 C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\en-US\M-Core.resources.dll
 C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\Microsoft.Extensions.Localization.Abstractions.dll
-C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\USER\source\repos\Medical\Medical-Api\bin\Debug\net7.0\SixLabors.ImageSharp.dll
+C:\Users\USER\source\repos\Medical\Medical-Api\obj\Debug\net7.0\Medical.MvcApplicationPartsAssemblyInfo.cs
