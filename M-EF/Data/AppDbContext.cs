@@ -36,6 +36,7 @@ namespace M_EF.Data
 
 
             builder.Entity<ApplicationUser>().HasQueryFilter(x => !x.IsDeleted);
+            builder.Entity<SpecialtyModel>().HasQueryFilter(x => !x.IsDeleted);
             builder.Entity<ServiceModel>().HasQueryFilter(x => !x.IsDeleted);
             builder.Entity<DoctorModel>().HasQueryFilter(x => !x.IsDeleted);
         }

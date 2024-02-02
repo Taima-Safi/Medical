@@ -11,6 +11,8 @@ namespace Repos.IRepos
     public interface ISpecialitiesRepo
     {
         Task<SpecialtyModel> AddSpeciality(SpecialtyModel model);
+        Task<List<SpecialtyModel>> GetAllSpecialities();
+        Task<int> GetSpecialitiesCount();
         Task<SpecialtyModel> GetSpeciality(Expression<Func<SpecialtyModel, bool>> predicate);
         void UpdateSpeciality(SpecialtyModel model);
     }

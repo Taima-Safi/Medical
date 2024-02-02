@@ -20,6 +20,16 @@ namespace Repos
             _context = context;
         }
 
+        public async Task<List<SpecialtyModel>> GetAllSpecialities()
+        {
+            return await _context.Specialities.ToListAsync();
+        }
+
+        public async Task<int> GetSpecialitiesCount()
+        {
+            return await _context.Specialities.CountAsync();
+        }
+
         public async Task<SpecialtyModel> GetSpeciality(Expression<Func<SpecialtyModel, bool>> predicate)
         {
              var speciality = await _context.Specialities.FirstOrDefaultAsync(predicate);

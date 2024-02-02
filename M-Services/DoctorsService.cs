@@ -23,6 +23,14 @@ namespace M_Services
             _specialitiesRepo = specialitiesRepo;
         }
 
+        public async Task<List<DoctorModel>> DoctorsForSpeciality(int specialityId)
+        {
+            var speciality = await _specialitiesRepo.GetSpeciality(s => s.Id == specialityId);
+            if (speciality is null)
+                return null;
+
+            return await _doctorsRepo.DoctorsForSpeciality(specialityId);
+        }
 
         public async Task<ReadDoctorDto> AddDoctor(DoctorDto dto)
         {

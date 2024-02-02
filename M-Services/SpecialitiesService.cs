@@ -29,6 +29,17 @@ namespace M_Services
             _doctorsRepo = doctorsRepo;
         }
 
+        public async Task<List<SpecialtyModel>> GetAllSpecialities()
+        {
+            return await _specialitiesRepo.GetAllSpecialities();
+        }
+        
+
+        public async Task<int> GetSpecialitiesCount()
+        {
+            return await _specialitiesRepo.GetSpecialitiesCount();
+        }
+
         public async Task<ReadSpecialityDto> AddSpeciality(SpecialityDto dto)
         {
             var special = await _specialitiesRepo.AddSpeciality(new SpecialtyModel

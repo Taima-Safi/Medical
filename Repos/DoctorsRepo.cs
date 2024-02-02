@@ -26,6 +26,12 @@ namespace Repos
 
         }
 
+        public async Task<List<DoctorModel>> DoctorsForSpeciality(int specialityId)
+        {
+            var doctors = await _context.Doctors.Where(d => d.SpecialityId == specialityId).ToListAsync();
+            return doctors;
+        }
+
         public async Task<List<DoctorModel>> GetSpecialityDoctors(Expression<Func<DoctorModel, bool>> predicate)
         {
             return await _context.Doctors.Where(predicate).ToListAsync();
